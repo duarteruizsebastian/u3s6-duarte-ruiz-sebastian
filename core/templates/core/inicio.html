@@ -1,0 +1,11 @@
+{% extends 'core/base.html' %}
+{% block titulo %}Inicio{% endblock %}
+{% block contenido %}
+<div class="bg-white border border-slate-200 rounded-xl shadow-sm p-8">
+  <h1 class="text-3xl font-bold mb-3">Hola desde MySQL</h1>
+  <p class="text-slate-600 mb-6">Proyecto Django conectado a Aiven.</p>
+  <p class="mb-2">Motor de base de datos: <strong>{{ motor }}</strong></p>
+  <p class="mb-6">Host: {{ host }}</p>
+  <a href="{% url 'servicios' %}" class="inline-flex rounded-lg bg-blue-600 px-5 py-2.5 font-semibold text-white hover:bg-blue-700">Ir a mis servicios</a>
+</div>
+{% endblock %}
